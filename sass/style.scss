@@ -5,7 +5,7 @@
 $black: #222222;
 $yellow: #fed136;
 $grey: #777777;
-$section-margin: 120px auto;
+$background-grey: #f7f7f7;
 header {
 	background-image: url(/images/background-image.png);
 	background-repeat: no-repeat;
@@ -63,6 +63,9 @@ header {
 		}
 	}
 }
+section {
+	margin: 120px auto;
+}
 .section-title {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
@@ -75,7 +78,6 @@ header {
 	color: $grey;
 }
 .services {
-	margin: $section-margin;
 	.first-row {
 		margin-bottom: 80px;
 	}
@@ -106,6 +108,41 @@ header {
 		}
 	}
 }
+.portfolio {
+	background-color: $background-grey;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	.first-row {
+		margin-top: 70px;
+		margin-bottom: 50px;
+	}
+	.photo-box {
+		img {
+			min-height: 300px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.photo-description {
+		background-color: white;
+		padding: 30px 0;
+		.photo-title {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+			color: $black;
+			margin: 0;
+		}
+		.photo-subtitle {
+			/*font-family: 'DroidSerif-Italic';*/
+			color: $grey;
+			margin: 0;
+		}
+	}
+	
+
+
+}
 @media (min-width: 768px) {
 	.navbar-brand img {
 		padding-top: 35px;
@@ -114,5 +151,13 @@ header {
 		.navbar-nav li a {
 			padding: 50px 20px;
 		}
+	}
+}
+@media (max-width: 991px) {
+	[class*="col-"] {
+		margin-bottom: 50px;
+	}
+	.portfolio .first-row {
+		margin-bottom: 0;
 	}
 }
