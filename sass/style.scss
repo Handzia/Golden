@@ -1,0 +1,72 @@
+/*@font-face {
+	font-family: 'DroidSerif-Italic';
+	src: url(vendor/fonts/.DroidSerif-Italic.ttf);
+}*/
+header {
+	background-image: url(/images/background-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 700px;
+	.dark-tint {
+		background-color: rgba(0,0,0,0.4); 
+		min-height: 700px;
+	}
+	.navbar-default {
+		background-color: rgba(0,0,0,0.01);
+		.navbar-nav li a {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			text-transform: uppercase;
+			&:hover {
+				transform: scale(1.1);
+				transition-duration: 0.5s;
+				color:white;
+			}
+		}
+		border: none;
+	}
+	
+	.jumbotron {
+		background-color: rgba(0,0,0,0.01);
+		margin-top: 100px;
+		p {
+			/*font-family: 'DroidSerif-Italic';*/
+			font-size: 40px;
+			color: white;
+		}
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 75px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-top: 35px;
+			margin-bottom: 60px;
+		}
+		.btn-default {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-weight: bold;
+			background-color: #fed136;
+			border: none;
+			&:hover {
+				transform: scale(1.1);
+				transition-duration: 1s;
+			}
+		}
+		.btn-lg {
+			padding: 25px 50px;
+			border-radius: 3px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.navbar-brand img {
+		padding-top: 35px;
+	}
+	.navbar-default {
+		.navbar-nav li a {
+			padding: 50px 20px;
+		}
+	}
+}
