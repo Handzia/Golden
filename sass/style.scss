@@ -2,6 +2,10 @@
 	font-family: 'DroidSerif-Italic';
 	src: url(vendor/fonts/.DroidSerif-Italic.ttf);
 }*/
+$black: #222222;
+$yellow: #fed136;
+$grey: #777777;
+$section-margin: 120px auto;
 header {
 	background-image: url(/images/background-image.png);
 	background-repeat: no-repeat;
@@ -25,7 +29,6 @@ header {
 		}
 		border: none;
 	}
-	
 	.jumbotron {
 		background-color: rgba(0,0,0,0.01);
 		margin-top: 100px;
@@ -47,16 +50,59 @@ header {
 			font-family: 'Montserrat', sans-serif;
 			color: white;
 			font-weight: bold;
-			background-color: #fed136;
+			background-color: $yellow;
 			border: none;
 			&:hover {
 				transform: scale(1.1);
-				transition-duration: 1s;
+				transition-duration: 0.8s;
 			}
 		}
 		.btn-lg {
 			padding: 25px 50px;
 			border-radius: 3px;
+		}
+	}
+}
+.section-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: $black;
+	text-transform: uppercase;
+}
+.section-subtitle {
+	/*font-family: 'DroidSerif-Italic';*/
+	color: $grey;
+}
+.services {
+	margin: $section-margin;
+	.first-row {
+		margin-bottom: 80px;
+	}
+	.second-row {
+		.circle {
+			height: 75px;
+			width: 75px;
+			border-radius: 50%;
+			border: 5px solid $yellow;
+			margin: 0 auto;
+			position: relative;
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+		h3 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+			color: $black;
+		}
+		p {
+			font-family: 'Roboto Slab', serif;
+			color: $grey;
 		}
 	}
 }
