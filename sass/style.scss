@@ -6,6 +6,7 @@ $black: #222222;
 $yellow: #fed136;
 $grey: #777777;
 $background-grey: #f7f7f7;
+
 header {
 	background-image: url(/images/background-image.png);
 	background-repeat: no-repeat;
@@ -78,6 +79,17 @@ section {
 	color: $grey;
 	margin-bottom: 80px;
 }
+.description-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: $black;
+	text-transform: capitalize;
+}
+.description-text {
+	font-family: 'Roboto Slab', serif;
+	color: $grey;
+}
 .services {
 	.circle {
 		height: 75px;
@@ -93,16 +105,6 @@ section {
 			transform: translate(-50%,-50%);
 		}
 	}
-	h3 {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 18px;
-		font-weight: bold;
-		color: $black;
-	}
-	p {
-		font-family: 'Roboto Slab', serif;
-		color: $grey;
-	}
 }
 .portfolio {
 	background-color: $background-grey;
@@ -115,10 +117,9 @@ section {
 		img {
 			min-height: 300px;
 			width: 100%;
-			object-fit: cover;
 		}
 	}
-	.photo-description {
+	.photo-label {
 		background-color: white;
 		padding: 30px 0;
 		.photo-title {
@@ -134,10 +135,87 @@ section {
 			margin: 0;
 		}
 	}
+}
+.about {
+	.middle {
+		min-height: 273px;
+	}
+	.photo-box {
+		position: relative;
+		&::after {
+			content: "";
+		    display: inline-block;
+		    min-height: 90px;
+		    width: 3px;
+		    background-color: #f1f1f1;
+		    position: absolute;
+		    top: 183px;
+		    left: 50%;
+		}
+	}
+	.date {
+		@extend .description-title;
+		text-transform: uppercase;
+	}
+	.last-circle {
+		height: 183px;
+		width: 183px;
+		border: 7px solid #f1f1f1;
+		background-color: $yellow;
+		border-radius: 50%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+.team {
+	background-color: $background-grey;
+	i.fab {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 3px solid $black;
+		font-size: 20px;
+		color: $black;
+		line-height: 35px;
+		cursor: pointer;
+	}
+	.fa-twitter:hover {
+		background-color: #00aced;
+		color: white;
+		border: none;
+	}
+	.fa-facebook-f:hover {
+		background-color: #3b5998;
+		color: white;
+		border: none;
+	}
+	.fa-google-plus-g:hover {
+		background-color: #d95232;
+		color: white;
+		border: none;
+	}
+	.fa-pinterest-p:hover {
+		background-color: #cb2028;
+		color: white;
+		border: none;
+	}
+	.team-content {
+		@extend .description-text;
+		font-size: 16px; 
+		margin-top: 50px;
+	}
+}
 	
 
-
-}
 @media (min-width: 768px) {
 	.navbar-brand img {
 		padding-top: 35px;
@@ -154,5 +232,23 @@ section {
 	}
 	.portfolio .first-row {
 		margin-bottom: 0;
+	}
+	.about {
+		[class*="col-"] {
+			margin-bottom: 0;
+		}
+		.text-right, .text-left {
+			text-align: center;
+		}
+		.circle-box::after {
+			display: none;
+		}
+		.middle {
+			min-height: 183px;
+		}
+		.photo-description {
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
 	}
 }
