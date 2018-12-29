@@ -198,6 +198,7 @@ section {
 }
 
 .team {
+  margin-bottom: 0;
   background-color: #f7f7f7;
 }
 
@@ -239,6 +240,31 @@ section {
 .team .team-content {
   font-size: 16px;
   margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.logos {
+  margin: 60px auto;
+}
+
+.logos .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.contact-us {
+  background-color: #222222;
+  margin-top: 0;
+}
+
+.contact-us .section-title {
+  color: white;
 }
 
 @media (min-width: 768px) {

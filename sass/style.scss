@@ -177,6 +177,7 @@ section {
 	}
 }
 .team {
+	margin-bottom: 0;
 	background-color: $background-grey;
 	i.fab {
 		width: 40px;
@@ -212,10 +213,25 @@ section {
 		@extend .description-text;
 		font-size: 16px; 
 		margin-top: 50px;
+		margin-bottom: 100px;
 	}
 }
-	
-
+.logos {
+	margin: 60px auto;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+}	
+.contact-us {
+	background-color: $black;
+	margin-top: 0;
+	.section-title {
+		color: white;
+	}
+}
 @media (min-width: 768px) {
 	.navbar-brand img {
 		padding-top: 35px;
