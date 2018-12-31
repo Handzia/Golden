@@ -205,7 +205,7 @@ section {
   height: 40px;
   border-radius: 50%;
   border: 3px solid #222222;
-  font-size: 20px;
+  font-size: 18px;
   color: #222222;
   line-height: 35px;
   cursor: pointer;
@@ -248,10 +248,9 @@ section {
 .contact-us {
   background-color: #222222;
   background-image: url(/images/map-image.png);
-  /*background-size: 50% 100%;*/
   background-repeat: no-repeat;
-  background-position: 100% 120px;
-  margin-top: 0;
+  background-position: 100% 125px;
+  margin: 0;
 }
 
 .contact-us .section-title {
@@ -260,13 +259,19 @@ section {
 }
 
 .contact-us input {
-  margin-bottom: 30px;
   height: 50px;
 }
 
 .contact-us textarea {
   height: 210px;
   padding-top: 14px;
+}
+
+.contact-us .form-control {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  margin-bottom: 30px;
 }
 
 .contact-us .btn-default {
@@ -289,14 +294,29 @@ section {
   border-radius: 3px;
 }
 
-.contact-us .form-control {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #bbbbbb;
-}
-
 .contact-us [class*="col-"] {
   margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+footer p {
+  color: #555555;
+  margin-top: 10px;
+}
+
+footer i.fab {
+  color: white;
+  font-size: 18px;
+  background-color: #222222;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 0 4px;
 }
 
 @media (min-width: 768px) {
@@ -333,6 +353,18 @@ section {
   }
   .logos {
     margin-bottom: 0;
+  }
+  footer [class*="col-"] {
+    margin-bottom: 0;
+  }
+  footer i.fab {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer p {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

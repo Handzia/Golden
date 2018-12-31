@@ -180,7 +180,7 @@ section {
 		height: 40px;
 		border-radius: 50%;
 		border: 3px solid $black;
-		font-size: 20px;
+		font-size: 18px;
 		color: $black;
 		line-height: 35px;
 		cursor: pointer;
@@ -218,21 +218,25 @@ section {
 .contact-us {
 	background-color: $black;
 	background-image: url(/images/map-image.png);
-	/*background-size: 50% 100%;*/
 	background-repeat: no-repeat;
-	background-position: 100% 120px;
-	margin-top: 0;
+	background-position: 100% 125px;
+	margin: 0;
 	.section-title {
 		color: white;
 		margin-top: 110px;
 	}
 	input {
-		margin-bottom: 30px;
 		height: 50px;
 	}
 	textarea {
 		height: 210px;
 		padding-top: 14px;
+	}
+	.form-control {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #bbbbbb;
+		margin-bottom: 30px;
 	}
 	.btn-default {
 		margin-bottom: 115px;
@@ -251,13 +255,27 @@ section {
 		padding: 25px 50px;
 		border-radius: 3px;
 	}
-	.form-control {
-		font-weight: bold;
-		text-transform: uppercase;
-		color: #bbbbbb;
-	}
+	
 	[class*="col-"] {
 		margin-bottom: 0;
+	}
+}
+footer {
+	text-align: center;
+	margin: 20px 0 30px 0;
+	p {
+		color: #555555;
+		margin-top: 10px;
+	}
+	i.fab {
+		color: white;
+		font-size: 18px;
+		background-color: $black;
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		margin: 0 4px;
 	}
 }
 @media (min-width: 768px) {
@@ -297,5 +315,18 @@ section {
 	}
 	.logos {
 		margin-bottom: 0;
+	}
+	footer {
+		[class*="col-"] {
+			margin-bottom: 0;
+		}
+		i.fab {
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	footer p {
+		text-align: left;
 	}
 }
