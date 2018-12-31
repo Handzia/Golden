@@ -2,6 +2,10 @@
 	font-family: 'DroidSerif-Italic';
 	src: url(vendor/fonts/.DroidSerif-Italic.ttf);
 }*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   background-image: url(/images/background-image.png);
   background-repeat: no-repeat;
@@ -20,7 +24,6 @@ header .navbar-default {
 }
 
 header .navbar-default .navbar-nav li a {
-  font-family: 'Montserrat', sans-serif;
   color: white;
   text-transform: uppercase;
 }
@@ -43,7 +46,6 @@ header .jumbotron p {
 }
 
 header .jumbotron h1 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 75px;
   color: white;
   text-transform: uppercase;
@@ -53,9 +55,9 @@ header .jumbotron h1 {
 }
 
 header .jumbotron .btn-default {
-  font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
+  text-transform: uppercase;
   background-color: #fed136;
   border: none;
 }
@@ -75,7 +77,6 @@ section {
 }
 
 .section-title {
-  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: #222222;
@@ -89,7 +90,6 @@ section {
 }
 
 .description-title, .about .date {
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #222222;
@@ -138,7 +138,6 @@ section {
 }
 
 .portfolio .photo-label .photo-title {
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #222222;
@@ -190,7 +189,6 @@ section {
 }
 
 .about .last-circle p {
-  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -247,24 +245,58 @@ section {
   margin: 60px auto;
 }
 
-.logos .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-}
-
 .contact-us {
   background-color: #222222;
+  background-image: url(/images/map-image.png);
+  /*background-size: 50% 100%;*/
+  background-repeat: no-repeat;
+  background-position: 100% 120px;
   margin-top: 0;
 }
 
 .contact-us .section-title {
   color: white;
+  margin-top: 110px;
+}
+
+.contact-us input {
+  margin-bottom: 30px;
+  height: 50px;
+}
+
+.contact-us textarea {
+  height: 210px;
+  padding-top: 14px;
+}
+
+.contact-us .btn-default {
+  margin-bottom: 115px;
+  margin-top: 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fed136;
+  border: none;
+}
+
+.contact-us .btn-default:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+
+.contact-us .btn-lg {
+  padding: 25px 50px;
+  border-radius: 3px;
+}
+
+.contact-us .form-control {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.contact-us [class*="col-"] {
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -298,6 +330,9 @@ section {
   .about .photo-description {
     margin-top: 20px;
     margin-bottom: 50px;
+  }
+  .logos {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

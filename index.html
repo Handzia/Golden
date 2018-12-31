@@ -253,12 +253,22 @@
 				<p class="team-content">Proin condimentum neque et convallis efficitur. Donec ante tortor, lobortis sit amet sapien nec, faucibus cursus ante. Fusce sit amet felis sollicitudin sapien sagittis gravida. Phasellus nulla neque, tempus nec diam id, dignissim volutpat lectus. Aliquam erat volutpat. Pellentesque faucibus vulputate massa eget placerat. Integer vel arcu justo. </p>
 			</div>
 		</section>
-		<section class="logos">
+		<section class="logos text-center">
 			<div class="container">
-				<img src="images/envato.png" alt="envato">
-				<img src="images/wordpress.png" alt="wordpress">
-				<img src="images/tuts+.png" alt="tuts+">
-				<img src="images/microlancer.png" alt="microlancer">
+				<div class="row>">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<img src="images/envato.png" alt="envato">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<img src="images/wordpress.png" alt="wordpress">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<img src="images/tuts+.png" alt="tuts+">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<img src="images/microlancer.png" alt="microlancer">
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="contact-us text-center">
@@ -267,15 +277,16 @@
 				<p class="section-subtitle">Vivamus fermentum pellentesque tellus ornare pharetra.</p>
 				<form>
 					<div class="row">
-						<div class="col-sm-12 col-md-6">
-							<input class="form-control" type="text" id="name" placeholder="Name*">
-							<input class="form-control">
-							<input class="form-control">
+						<div class="col-xs-12 col-sm-6">
+							<input class="form-control" type="text" id="name" placeholder="Name *">
+							<input class="form-control" type="email" id="email" placeholder="Your e-mail *">
+							<input class="form-control" type="text" id="subject" placeholder="Subject">
 						</div>
-						<div class="col-sm-12 col-md-6">
-							<input class="form-control">
+						<div class="col-xs-12 col-sm-6">
+							<textarea class="form-control">Your message</textarea>
 						</div>
 					</div>
+					<button type="submit" class="btn btn-default btn-lg">Send message</button>
 				</form>
 			</div>
 		</section>
