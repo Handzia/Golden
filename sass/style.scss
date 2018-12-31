@@ -6,6 +6,10 @@ $black: #222222;
 $yellow: #fed136;
 $grey: #777777;
 $background-grey: #f7f7f7;
+$twitter: #00aced;
+$facebook: #3b5998;
+$pinterest: #cb2028;
+$google-plus: #d95232;
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -109,6 +113,7 @@ header {
 		margin-bottom: 50px;
 	}
 	.photo-box {
+		cursor: pointer;
 		img {
 			min-height: 300px;
 			width: 100%;
@@ -183,26 +188,10 @@ header {
 		color: $black;
 		line-height: 35px;
 		cursor: pointer;
-	}
-	.fa-twitter:hover {
-		background-color: #00aced;
-		color: white;
-		border: none;
-	}
-	.fa-facebook-f:hover {
-		background-color: #3b5998;
-		color: white;
-		border: none;
-	}
-	.fa-google-plus-g:hover {
-		background-color: #d95232;
-		color: white;
-		border: none;
-	}
-	.fa-pinterest-p:hover {
-		background-color: #cb2028;
-		color: white;
-		border: none;
+		&:hover {
+			color: white;
+			border: none;
+		}
 	}
 	.team-content {
 		@extend .description-text;
@@ -210,6 +199,18 @@ header {
 		margin-top: 50px;
 		margin-bottom: 100px;
 	}
+}
+.fa-twitter:hover {
+	background-color: $twitter;
+}
+.fa-facebook-f:hover {
+	background-color: $facebook;
+}
+.fa-google-plus-g:hover {
+	background-color: $google-plus;
+}
+.fa-pinterest-p:hover {
+	background-color: $pinterest;
 }
 .logos {
 	margin: 60px auto;
@@ -275,6 +276,11 @@ footer {
 		width: 40px;
 		line-height: 40px;
 		margin: 0 4px;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.3s;
+		}
 	}
 }
 @media (max-width: 767px) {
@@ -312,7 +318,7 @@ footer {
 		.text-right, .text-left {
 			text-align: center;
 		}
-		.circle-box::after {
+		.photo-box::after {
 			display: none;
 		}
 		.middle {
