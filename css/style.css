@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-image: url(../images/Background-Image.png);
+  background-image: url(./images/Background-Image.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;
@@ -267,7 +267,7 @@ header .jumbotron .btn-lg {
 
 .contact-us {
   background-color: #222222;
-  background-image: url(../images/Map-Image.png);
+  background-image: url(./images/Map-Image.png);
   background-repeat: no-repeat;
   background-position: 100% 125px;
   margin: 0;
