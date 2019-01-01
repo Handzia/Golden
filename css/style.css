@@ -1,7 +1,8 @@
-/*@font-face {
-	font-family: 'DroidSerif-Italic';
-	src: url(vendor/fonts/.DroidSerif-Italic.ttf);
-}*/
+@font-face {
+  font-family: 'DroidSerif-Italic';
+  src: url(/vendor/fonts/DroidSerif-Italic.ttf);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -40,7 +41,7 @@ header .jumbotron {
 }
 
 header .jumbotron p {
-  /*font-family: 'DroidSerif-Italic';*/
+  font-family: 'DroidSerif-Italic', serif;
   font-size: 40px;
   color: white;
 }
@@ -80,7 +81,7 @@ header .jumbotron .btn-lg {
 }
 
 .section-subtitle {
-  /*font-family: 'DroidSerif-Italic';*/
+  font-family: 'DroidSerif-Italic', serif;
   color: #777777;
   margin-bottom: 80px;
 }
@@ -202,32 +203,18 @@ header .jumbotron .btn-lg {
   text-transform: uppercase;
 }
 
-.team {
-  margin-bottom: 0;
-  padding-top: 100px;
-  background-color: #f7f7f7;
-}
-
-.team i.fab {
+.icon-general, .team i.fab, footer i.fab {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid #222222;
   font-size: 18px;
-  color: #222222;
-  line-height: 35px;
   cursor: pointer;
+  margin: 0 4px;
 }
 
-.team i.fab:hover {
-  color: white;
-  border: none;
-}
-
-.team .team-content {
-  font-size: 16px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+.icon-general:hover, .team i.fab:hover, footer i.fab:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .fa-twitter:hover {
@@ -244,6 +231,34 @@ header .jumbotron .btn-lg {
 
 .fa-pinterest-p:hover {
   background-color: #cb2028;
+}
+
+.team {
+  margin-bottom: 0;
+  padding-top: 100px;
+  background-color: #f7f7f7;
+}
+
+.team img {
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.team i.fab {
+  border: 3px solid #222222;
+  color: #222222;
+  line-height: 35px;
+}
+
+.team i.fab:hover {
+  color: white;
+  border: 0;
+}
+
+.team .team-content {
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .logos {
@@ -315,19 +330,8 @@ footer p {
 
 footer i.fab {
   color: white;
-  font-size: 18px;
   background-color: #222222;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
   line-height: 40px;
-  margin: 0 4px;
-  cursor: pointer;
-}
-
-footer i.fab:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
 }
 
 @media (max-width: 767px) {

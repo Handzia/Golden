@@ -1,7 +1,7 @@
-/*@font-face {
+@font-face {
 	font-family: 'DroidSerif-Italic';
-	src: url(vendor/fonts/.DroidSerif-Italic.ttf);
-}*/
+	src: url(/vendor/fonts/DroidSerif-Italic.ttf);
+}
 $black: #222222;
 $yellow: #fed136;
 $grey: #777777;
@@ -39,7 +39,7 @@ header {
 		background-color: rgba(0,0,0,0.01);
 		margin-top: 100px;
 		p {
-			/*font-family: 'DroidSerif-Italic';*/
+			font-family: 'DroidSerif-Italic', serif;
 			font-size: 40px;
 			color: white;
 		}
@@ -75,7 +75,7 @@ header {
 	text-transform: uppercase;
 }
 .section-subtitle {
-	/*font-family: 'DroidSerif-Italic';*/
+	font-family: 'DroidSerif-Italic', serif;
 	color: $grey;
 	margin-bottom: 80px;
 }
@@ -175,29 +175,16 @@ header {
 		}
 	}
 }
-.team {
-	margin-bottom: 0;
-	padding-top: 100px;
-	background-color: $background-grey;
-	i.fab {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		border: 3px solid $black;
-		font-size: 18px;
-		color: $black;
-		line-height: 35px;
-		cursor: pointer;
-		&:hover {
-			color: white;
-			border: none;
-		}
-	}
-	.team-content {
-		@extend .description-text;
-		font-size: 16px; 
-		margin-top: 50px;
-		margin-bottom: 100px;
+.icon-general {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 0 4px;
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.3s;
 	}
 }
 .fa-twitter:hover {
@@ -211,6 +198,31 @@ header {
 }
 .fa-pinterest-p:hover {
 	background-color: $pinterest;
+}
+.team {
+	margin-bottom: 0;
+	padding-top: 100px;
+	background-color: $background-grey;
+	img {
+		margin-bottom: 30px;
+		border-radius: 50%;
+	}
+	i.fab {
+		@extend .icon-general;
+		border: 3px solid $black;
+		color: $black;
+		line-height: 35px;
+		&:hover {
+			color: white;
+			border: 0;
+		}
+	}
+	.team-content {
+		@extend .description-text;
+		font-size: 16px; 
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
 }
 .logos {
 	margin: 60px auto;
@@ -268,19 +280,10 @@ footer {
 		margin-top: 10px;
 	}
 	i.fab {
+		@extend .icon-general;
 		color: white;
-		font-size: 18px;
 		background-color: $black;
-		border-radius: 50%;
-		height: 40px;
-		width: 40px;
 		line-height: 40px;
-		margin: 0 4px;
-		cursor: pointer;
-		&:hover {
-			transform: scale(1.1);
-			transition: 0.3s;
-		}
 	}
 }
 @media (max-width: 767px) {
