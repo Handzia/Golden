@@ -78,3 +78,8 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+images/zadanie-golden.psd
+
+images/Thumbs.db
+
