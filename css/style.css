@@ -252,7 +252,22 @@ header .jumbotron .btn-lg {
 
 .team i.fab:hover {
   color: white;
-  border: 0;
+}
+
+.team .fa-twitter:hover {
+  border: 3px solid #00aced;
+}
+
+.team .fa-facebook-f:hover {
+  border: 3px solid #3b5998;
+}
+
+.team .fa-google-plus-g:hover {
+  border: 3px solid #d95232;
+}
+
+.team .fa-pinterest-p:hover {
+  border: 3px solid #cb2028;
 }
 
 .team .team-content {

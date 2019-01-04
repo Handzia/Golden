@@ -214,8 +214,19 @@ header {
 		line-height: 35px;
 		&:hover {
 			color: white;
-			border: 0;
 		}
+	}
+	.fa-twitter:hover {
+		border: 3px solid $twitter;
+	}
+	.fa-facebook-f:hover {
+		border: 3px solid $facebook;
+	}
+	.fa-google-plus-g:hover {
+		border: 3px solid $google-plus;
+	}
+	.fa-pinterest-p:hover {
+		border: 3px solid $pinterest;
 	}
 	.team-content {
 		@extend .description-text;
