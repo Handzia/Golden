@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-image: url(https://handzia.github.io/images/Background-Image.png);
+  background-image: url(../images/Background-Image.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;
