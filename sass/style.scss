@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'DroidSerif-Italic';
-	src: url(https://handzia.github.io/vendor/fonts/DroidSerif-Italic.ttf);
+	src: url(../fonts/droidserif-italic.ttf);
 }
 $black: #222222;
 $yellow: #fed136;
@@ -10,11 +10,12 @@ $twitter: #00aced;
 $facebook: #3b5998;
 $pinterest: #cb2028;
 $google-plus: #d95232;
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
 header {
-	background-image: url(Golden/images/Background-Image.png);
+	background-image: url(../images/background-image.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 700px;
@@ -240,7 +241,7 @@ header {
 }	
 .contact-us {
 	background-color: $black;
-	background-image: url(https://handzia.github.io/images/Map-Image.png);
+	background-image: url(../images/map-image.png);
 	background-repeat: no-repeat;
 	background-position: 100% 125px;
 	margin: 0;
