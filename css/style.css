@@ -120,15 +120,13 @@ header .jumbotron .btn-lg {
 
 .portfolio {
   background-color: #f7f7f7;
-  padding: 120px 0;
-}
-
-.portfolio .first-row {
-  margin-bottom: 50px;
+  padding-top: 120px;
+  padding-bottom: 70px;
 }
 
 .portfolio .photo-box {
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .portfolio .photo-box img {
@@ -149,7 +147,7 @@ header .jumbotron .btn-lg {
 }
 
 .portfolio .photo-label .photo-subtitle {
-  /*font-family: 'DroidSerif-Italic';*/
+  font-family: 'DroidSerif-Italic';
   color: #777777;
   margin: 0;
 }
@@ -248,6 +246,7 @@ header .jumbotron .btn-lg {
   border: 3px solid #222222;
   color: #222222;
   line-height: 35px;
+  margin-bottom: 50px;
 }
 
 .team i.fab:hover {
@@ -272,12 +271,15 @@ header .jumbotron .btn-lg {
 
 .team .team-content {
   font-size: 16px;
-  margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .logos {
   margin: 60px auto;
+}
+
+.logos img {
+  margin: 25px auto;
 }
 
 .contact-us {
@@ -329,10 +331,6 @@ header .jumbotron .btn-lg {
   border-radius: 3px;
 }
 
-.contact-us [class*="col-"] {
-  margin-bottom: 0;
-}
-
 footer {
   text-align: center;
   margin: 20px 0 30px 0;
@@ -371,13 +369,10 @@ footer i.fab {
 }
 
 @media (max-width: 991px) {
-  [class*="col-"] {
+  .description-text, .team .team-content {
     margin-bottom: 50px;
   }
   .portfolio .first-row {
-    margin-bottom: 0;
-  }
-  .about [class*="col-"] {
     margin-bottom: 0;
   }
   .about .text-right, .about .text-left {
@@ -391,13 +386,9 @@ footer i.fab {
   }
   .about .photo-description {
     margin-top: 20px;
-    margin-bottom: 50px;
   }
-  .logos {
-    margin-bottom: 0;
-  }
-  footer [class*="col-"] {
-    margin-bottom: 0;
+  .team .description-text, .team .team-content {
+    margin-bottom: 10px;
   }
   footer i.fab {
     margin-bottom: 20px;

@@ -109,12 +109,11 @@ header {
 }
 .portfolio {
 	background-color: $background-grey;
-	padding: 120px 0;
-	.first-row {
-		margin-bottom: 50px;
-	}
+	padding-top: 120px;
+	padding-bottom: 70px;
 	.photo-box {
 		cursor: pointer;
+		margin-bottom: 50px;
 		img {
 			min-height: 300px;
 			width: 100%;
@@ -130,7 +129,7 @@ header {
 			margin: 0;
 		}
 		.photo-subtitle {
-			/*font-family: 'DroidSerif-Italic';*/
+			font-family: 'DroidSerif-Italic';
 			color: $grey;
 			margin: 0;
 		}
@@ -213,6 +212,7 @@ header {
 		border: 3px solid $black;
 		color: $black;
 		line-height: 35px;
+		margin-bottom: 50px;
 		&:hover {
 			color: white;
 		}
@@ -232,12 +232,14 @@ header {
 	.team-content {
 		@extend .description-text;
 		font-size: 16px; 
-		margin-top: 50px;
 		margin-bottom: 100px;
 	}
 }
 .logos {
 	margin: 60px auto;
+	img {
+		margin: 25px auto;
+	}
 }	
 .contact-us {
 	background-color: $black;
@@ -279,10 +281,6 @@ header {
 		padding: 25px 50px;
 		border-radius: 3px;
 	}
-	
-	[class*="col-"] {
-		margin-bottom: 0;
-	}
 }
 footer {
 	text-align: center;
@@ -320,16 +318,13 @@ footer {
 	}
 }
 @media (max-width: 991px) {
-	[class*="col-"] {
+	.description-text {
 		margin-bottom: 50px;
 	}
 	.portfolio .first-row {
 		margin-bottom: 0;
 	}
 	.about {
-		[class*="col-"] {
-			margin-bottom: 0;
-		}
 		.text-right, .text-left {
 			text-align: center;
 		}
@@ -341,16 +336,12 @@ footer {
 		}
 		.photo-description {
 			margin-top: 20px;
-			margin-bottom: 50px;
 		}
 	}
-	.logos {
-		margin-bottom: 0;
+	.team .description-text {
+		margin-bottom: 10px;
 	}
 	footer {
-		[class*="col-"] {
-			margin-bottom: 0;
-		}
 		i.fab {
 			margin-bottom: 20px;
 		}
